@@ -1,0 +1,71 @@
+OpenROAD v2.0-19576-gec1bf1a13 
+Features included (+) or not (-): +GPU +GUI +Python : None
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ORD-0030] Using 32 thread(s).
+read_liberty /work/ece260c-lab1-ShijieSun/section3/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/lib/sg13g2_stdcell_typ_1p20V_25C.lib
+Deleted 0 routing obstructions
+[INFO RCX-0431] Defined process_corner X with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner X
+[INFO RCX-0435] Reading extraction model file /work/ece260c-lab1-ShijieSun/section3/OpenROAD-flow-scripts/flow/platforms/ihp-sg13g2/rcx_patterns.rules ...
+[INFO RCX-0436] RC segment generation asqrt_top (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 3135 rc segments
+[INFO RCX-0439] Coupling Cap extraction asqrt_top ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 50% of 5071 wires extracted
+[INFO RCX-0442] 100% of 5071 wires extracted
+[INFO RCX-0045] Extract 1077 nets, 4051 rsegs, 4051 caps, 4963 ccs
+[INFO RCX-0443] 1077 nets finished
+[INFO PSM-0040] All shapes on net VDD are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VDD
+Corner           : default
+Supply voltage   : 1.20e+00 V
+Worstcase voltage: 1.20e+00 V
+Average voltage  : 1.20e+00 V
+Average IR drop  : 7.29e-04 V
+Worstcase IR drop: 1.18e-03 V
+Percentage drop  : 0.10 %
+######################################
+[INFO PSM-0040] All shapes on net VSS are connected.
+[INFO PSM-0073] Using bump pattern with x-pitch 140.0000um, y-pitch 140.0000um, and size 70.0000um with an reduction factor of 3x.
+########## IR report #################
+Net              : VSS
+Corner           : default
+Supply voltage   : 0.00e+00 V
+Worstcase voltage: 2.36e-03 V
+Average voltage  : 1.43e-03 V
+Average IR drop  : 1.43e-03 V
+Worstcase IR drop: 2.36e-03 V
+Percentage drop  : 0.20 %
+######################################
+Cell type report:                       Count       Area
+  Fill cell                               426    1088.64
+  Other                                  1013   12087.53
+  Clock buffer                             17     749.35
+  Timing Repair Buffer                     99     809.22
+  Inverter                                 29     161.48
+  Sequential cell                          80    3773.95
+  Multi-Input combinational cell          641    5953.05
+  Total                                  2305   24623.22
+Report metrics stage 6, finish...
+
+==========================================================================
+finish report_design_area
+--------------------------------------------------------------------------
+Design area 23535 u^2 96% utilization.
+[WARNING GUI-0076] QStandardPaths: runtime directory '/mnt/wslg/runtime-dir' is not owned by UID 0, but a directory permissions 0777 owned by UID 1000 GID 1000
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/final_all.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/final_routing.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/final_placement.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/final_ir_drop.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/final_clocks.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/cts_core_clock.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/cts_core_clock_layout.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/final_resizer.webp.png
+[WARNING GUI-0010] File path does not end with a valid extension, new path is: ./reports/ihp-sg13g2/asqrt_top/base/final_congestion.webp.png
+[WARNING GUI-0076] QXcbConnection: XCB error: 13 (BadGC), sequence: 450, resource id: 0, major code: 72 (PutImage), minor code: 0
+Elapsed time: 0:03.51[h:]min:sec. CPU time: user 1.97 sys 2.15 (117%). Peak memory: 268968KB.
+Log                        Elapsed/s Peak Memory/MB  sha1sum .odb [0:20)
+6_report                           3            262                  N/A

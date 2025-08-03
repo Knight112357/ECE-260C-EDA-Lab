@@ -1,0 +1,178 @@
+
+==========================================================================
+floorplan final report_tns
+--------------------------------------------------------------------------
+tns 0.00
+
+==========================================================================
+floorplan final report_wns
+--------------------------------------------------------------------------
+wns 0.00
+
+==========================================================================
+floorplan final report_worst_slack
+--------------------------------------------------------------------------
+worst slack 3.14
+
+==========================================================================
+floorplan final report_checks -path_delay min
+--------------------------------------------------------------------------
+Startpoint: genblk1[1].pipe.result[14]$_DFFE_PP_
+            (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: genblk1[1].pipe.result[14]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: min
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ genblk1[1].pipe.result[14]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+     2    0.00    0.02    0.18    0.18 v genblk1[1].pipe.result[14]$_DFFE_PP_/Q (sg13g2_dfrbp_1)
+                                         results[46] (net)
+                  0.02    0.00    0.18 v _0843_/A (sg13g2_nand2_1)
+     1    0.00    0.02    0.03    0.21 ^ _0843_/Y (sg13g2_nand2_1)
+                                         _0385_ (net)
+                  0.02    0.00    0.21 ^ _0844_/B1 (sg13g2_o21ai_1)
+     1    0.00    0.02    0.04    0.25 v _0844_/Y (sg13g2_o21ai_1)
+                                         _0048_ (net)
+                  0.02    0.00    0.25 v genblk1[1].pipe.result[14]$_DFFE_PP_/D (sg13g2_dfrbp_1)
+                                  0.25   data arrival time
+
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          0.00    0.00   clock reconvergence pessimism
+                                  0.00 ^ genblk1[1].pipe.result[14]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+                         -0.04   -0.04   library hold time
+                                 -0.04   data required time
+-----------------------------------------------------------------------------
+                                 -0.04   data required time
+                                 -0.25   data arrival time
+-----------------------------------------------------------------------------
+                                  0.29   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -path_delay max
+--------------------------------------------------------------------------
+Startpoint: ready (input port clocked by core_clock)
+Endpoint: genblk1[2].pipe.result[12]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.00    1.00 v input external delay
+     1    0.00    0.00    0.00    1.00 v ready (in)
+                                         ready (net)
+                  0.00    0.00    1.00 v _0647_/A (sg13g2_buf_1)
+     9    0.02    0.08    0.10    1.10 v _0647_/X (sg13g2_buf_1)
+                                         _0203_ (net)
+                  0.08    0.00    1.10 v _0923_/A (sg13g2_and2_1)
+     1    0.00    0.02    0.09    1.19 v _0923_/X (sg13g2_and2_1)
+                                         _0463_ (net)
+                  0.02    0.00    1.19 v _0924_/A (sg13g2_buf_1)
+     5    0.01    0.05    0.08    1.27 v _0924_/X (sg13g2_buf_1)
+                                         _0464_ (net)
+                  0.05    0.00    1.27 v _0925_/B (sg13g2_nor2_1)
+     4    0.01    0.11    0.10    1.38 ^ _0925_/Y (sg13g2_nor2_1)
+                                         _0465_ (net)
+                  0.11    0.00    1.38 ^ _0926_/C (sg13g2_nand3_1)
+     1    0.00    0.07    0.09    1.47 v _0926_/Y (sg13g2_nand3_1)
+                                         _0466_ (net)
+                  0.07    0.00    1.47 v _0927_/A (sg13g2_buf_1)
+     6    0.02    0.08    0.13    1.60 v _0927_/X (sg13g2_buf_1)
+                                         _0467_ (net)
+                  0.08    0.00    1.60 v _0928_/S (sg13g2_mux2_1)
+     1    0.00    0.03    0.14    1.74 ^ _0928_/X (sg13g2_mux2_1)
+                                         _0064_ (net)
+                  0.03    0.00    1.74 ^ genblk1[2].pipe.result[12]$_DFFE_PP_/D (sg13g2_dfrbp_1)
+                                  1.74   data arrival time
+
+                  0.00    5.00    5.00   clock core_clock (rise edge)
+                          0.00    5.00   clock network delay (ideal)
+                          0.00    5.00   clock reconvergence pessimism
+                                  5.00 ^ genblk1[2].pipe.result[12]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+                         -0.11    4.89   library setup time
+                                  4.89   data required time
+-----------------------------------------------------------------------------
+                                  4.89   data required time
+                                 -1.74   data arrival time
+-----------------------------------------------------------------------------
+                                  3.14   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_checks -unconstrained
+--------------------------------------------------------------------------
+Startpoint: ready (input port clocked by core_clock)
+Endpoint: genblk1[2].pipe.result[12]$_DFFE_PP_
+          (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                          1.00    1.00 v input external delay
+     1    0.00    0.00    0.00    1.00 v ready (in)
+                                         ready (net)
+                  0.00    0.00    1.00 v _0647_/A (sg13g2_buf_1)
+     9    0.02    0.08    0.10    1.10 v _0647_/X (sg13g2_buf_1)
+                                         _0203_ (net)
+                  0.08    0.00    1.10 v _0923_/A (sg13g2_and2_1)
+     1    0.00    0.02    0.09    1.19 v _0923_/X (sg13g2_and2_1)
+                                         _0463_ (net)
+                  0.02    0.00    1.19 v _0924_/A (sg13g2_buf_1)
+     5    0.01    0.05    0.08    1.27 v _0924_/X (sg13g2_buf_1)
+                                         _0464_ (net)
+                  0.05    0.00    1.27 v _0925_/B (sg13g2_nor2_1)
+     4    0.01    0.11    0.10    1.38 ^ _0925_/Y (sg13g2_nor2_1)
+                                         _0465_ (net)
+                  0.11    0.00    1.38 ^ _0926_/C (sg13g2_nand3_1)
+     1    0.00    0.07    0.09    1.47 v _0926_/Y (sg13g2_nand3_1)
+                                         _0466_ (net)
+                  0.07    0.00    1.47 v _0927_/A (sg13g2_buf_1)
+     6    0.02    0.08    0.13    1.60 v _0927_/X (sg13g2_buf_1)
+                                         _0467_ (net)
+                  0.08    0.00    1.60 v _0928_/S (sg13g2_mux2_1)
+     1    0.00    0.03    0.14    1.74 ^ _0928_/X (sg13g2_mux2_1)
+                                         _0064_ (net)
+                  0.03    0.00    1.74 ^ genblk1[2].pipe.result[12]$_DFFE_PP_/D (sg13g2_dfrbp_1)
+                                  1.74   data arrival time
+
+                  0.00    5.00    5.00   clock core_clock (rise edge)
+                          0.00    5.00   clock network delay (ideal)
+                          0.00    5.00   clock reconvergence pessimism
+                                  5.00 ^ genblk1[2].pipe.result[12]$_DFFE_PP_/CLK (sg13g2_dfrbp_1)
+                         -0.11    4.89   library setup time
+                                  4.89   data required time
+-----------------------------------------------------------------------------
+                                  4.89   data required time
+                                 -1.74   data arrival time
+-----------------------------------------------------------------------------
+                                  3.14   slack (MET)
+
+
+
+==========================================================================
+floorplan final report_power
+--------------------------------------------------------------------------
+Group                  Internal  Switching    Leakage      Total
+                          Power      Power      Power      Power (Watts)
+----------------------------------------------------------------
+Sequential             1.01e-03   1.70e-05   3.89e-08   1.03e-03  80.6%
+Combinational          1.43e-04   1.05e-04   1.02e-07   2.48e-04  19.4%
+Clock                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Macro                  0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+Pad                    0.00e+00   0.00e+00   0.00e+00   0.00e+00   0.0%
+----------------------------------------------------------------
+Total                  1.15e-03   1.21e-04   1.41e-07   1.28e-03 100.0%
+                          90.5%       9.5%       0.0%
