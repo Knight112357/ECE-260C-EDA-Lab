@@ -26,7 +26,7 @@ def decode_cam_index(name):
 
 # TODO: When you're writing scripts, write your code below this line:
 insts = block.getInsts()
-cam_insts = [i for i in insts if i.getName().startswith("cam")] # Get 
+cam_insts = [i for i in insts if i.getName().startswith("cam")]
 
 dff_insts = [i for i in cam_insts if i.getMaster().getName() == "sg13g2_dfrbp_1"]
 xnor_insts = [i for i in cam_insts if i.getMaster().getName() == "sg13g2_xnor2_1"]
