@@ -84,9 +84,7 @@ Through Lab 0, I learned how to run the full OpenROAD flow script, understood th
 
 This lab provided a high-level overview of the entire RTL-to-GDSII pipeline and gave us hands-on experience with both command-line and graphical interfaces, laying the foundation for deeper exploration in subsequent labs.
 
-For detailed instructions on running the flow and explanations of the configuration parameters, please refer to my [note](./Lab%200/Lab%200-note.md) and
-
-[Lab 0 report](./Lab%200/submitting/ECE%20260C%20Lab%200.pdf).
+For detailed instructions on running the flow and explanations of the configuration parameters, please refer to my [note](./Lab%200/Lab%200-note.md) and [Lab 0 report](./Lab%200/submitting/ECE%20260C%20Lab%200.pdf).
 
 Figure below shows the main stages of the OpenROAD-flow-scripts:
 
@@ -188,6 +186,8 @@ Ultimately, this lab illustrated that:
 
 A bug fixed in RTL, see [State Machine Encoding Error in asqrt_pipe · Issue #1 · UDXS/ece260c-lab1-starter](https://github.com/UDXS/ece260c-lab1-starter/issues/1)
 
+For more details, please refer to my [note](./Lab%201/Lab%201-note.md) and [Lab 1 report](./Lab%201/ECE%20260C%20Lab%201.pdf).
+
 ## 3. Lab 2: Scripting with OpenDB – Direct Database Manipulation via Python
 
 Lab 2 introduced scripting capabilities for physical design using the OpenDB Python API, which allows users to access and manipulate the internal database of the OpenROAD toolchain. This lab emphasized building intuitive and practical understanding of the database structure and how to use Python for custom layout operations.
@@ -227,6 +227,8 @@ I aimed to move beyond GUI-based design tools and experiment, enabling programma
 4. **Developed Debugging Heuristics**:
 
    Handled common issues such as invalid references or coordinate mismatches through assertions and visualization.
+
+For more details, please refer to my [note](./Lab%202/Lab%202-note.md) and [Lab 2 report](./Lab%202/ECE%20260C%20Lab%202.pdf).
 
 ## Conclusion
 
