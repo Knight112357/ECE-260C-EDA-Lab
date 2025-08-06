@@ -25,7 +25,7 @@ In this project, I was responsible for:
 The evaluation focused on three core areas:
 
 1. **Technical Proficiency**
-   - Mastery of open-source physical design tools (e.g., OpenROAD, Yosys, KLayout, etc.)
+   - Mastery of open-source physical design tools (e.g. OpenROAD, Yosys etc.)
    - Algorithmic thinking for solving design and optimization problems
    - Debugging and tool integration flows
 2. **Scientific Rigor**
@@ -35,7 +35,6 @@ The evaluation focused on three core areas:
 3. **Learning Potential**
    - Ability to self-learn and explore beyond the course materials
    - Reflections on emerging trends in open-source EDA
-   - Adaptation to real-world chip design challenges with minimal supervision
 
 ## Project Structure & Submission
 
@@ -64,8 +63,6 @@ The evaluation focused on three core areas:
 └── README.md
 ```
 
-This project was completed as part of the ECOS team evaluation and follows the expectations outlined in the **62DAC Open-Source EDA BoF** initiative.
-
 The experiment requirements are detailed in the official project slide: [**Markarian Redistribution Project Requirements**](https://github.com/open-source-eda-birds-of-a-feather/open-source-eda-birds-of-a-feather.github.io/blob/main/doc/slides_2025/dac25_markarian_redist.md)
 
 ECE 260C OpenROAD-based Course Contents (Licensed under CC-BY 4.0)
@@ -75,11 +72,11 @@ ECE 260C OpenROAD-based Course Contents (Licensed under CC-BY 4.0)
 
 ### Lab 0
 
-[Lab 0 report](./Lab 0/submitting/ECE 260C Lab 0.pdf)
+[Lab 0 report](./Lab%200/submitting/ECE%20260C%20Lab%200.pdf)
 
-[Lab 0 Submission](./Lab 0/submitting/):
+[Lab 0 Submission](./Lab%200/submitting/):
 
-```
+```bash
 config.mk
 6_finish.rpt
 cts_core_clock_layout.webp.png
@@ -89,9 +86,9 @@ cts_core_clock_layout.webp.png
 
 ### Lab 1
 
-[Lab 1 report](./Lab 1/ECE 260C Lab 1.pdf)
+[Lab 1 report](./Lab%201/ECE%20260C%20Lab%201.pdf)
 
-[Lab 1 Submission](./Lab 1/ece260c-lab1-ShijieSun)
+[Lab 1 Submission](./Lab%201/ece260c-lab1-ShijieSun)
 
 ```bash
 Lab 1/ece260c-lab1-ShijieSun/
@@ -124,9 +121,9 @@ Lab 1/ece260c-lab1-ShijieSun/
 
 ### Lab 2
 
-[Lab 2 report](./Lab 2/ECE 260C Lab 2.pdf)
+[Lab 2 report](./Lab%202/ECE%20260C%20Lab%202.pdf)
 
-[Lab 2 Submission](./Lab 2/ece260c-lab2-ShijieSun)
+[Lab 2 Submission](./Lab%202/ece260c-lab2-ShijieSun)
 
 ```bash
 Lab 2/ece260c-lab2-ShijieSun/
@@ -155,13 +152,13 @@ Lab 2/ece260c-lab2-ShijieSun/
 
 ### Final Report
 
-[Lab report](./Lab report.md)
+[Lab report](./Lab%20Report.md)
 
 ## Academic Integrity Statement
 
-I affirm that all reports and code submitted for this project were independently completed by myself in accordance with the principles of [academic integrity](https://integrity.mit.edu).
+I affirm that all reports and code submitted for this project were **independently completed by myself** in accordance with the principles of [academic integrity](https://integrity.mit.edu).
 
 In the process of completing this project, I adhered to the spirit of **RTFM** (Read The Friendly Manual), **RTFSC** (Read The Friendly Source Code), and **STFW** (Search The Friendly Web).
 
-Some notes and explanations were organized or summarized using AI assistance under the guideline of **ATFAI** (Ask The Friendly AI), with the permitted scope defined by [jyy's advice](https://jyywiki.cn/OS/2025/labs/Labs.md).
+Some notes and explanations were organized or summarized with AI assistance under the guideline of **ATFAI** (Ask The Friendly AI), with the permitted scope defined by [jyy's advice](https://jyywiki.cn/OS/2025/labs/Labs.md).
 
